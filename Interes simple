@@ -1,0 +1,70 @@
+			public static void main(String[]args)
+			{	
+				Scanner scanner=new Scanner(System.in);
+				System.out.println("CALCULADORA FINANCIERA");
+				System.out.println("¿Que desea calcular?");
+				System.out.println("1 ------> Interes Simple");
+				System.out.println("2 ------> Monto Simple");
+				System.out.println("3 ------> Capital");
+				System.out.println("4 ------> Tasa de interes");
+				System.out.println("5 ------> Tiempo o plazo");
+				int dp;
+				dp=scanner.nextInt();
+				
+				//Decision numero 1
+				if(dp==1){
+				    System.out.println("*Interes simple*");
+					System.out.println("Digite su CAPILTAL");
+					double capital=scanner.nextInt();
+					System.out.println("Eliga la opcion del interes");
+					System.out.println("1 Mensual");
+					System.out.println("2 Bimestral");
+					int decision1=scanner.nextInt);
+			
+				//If anidado de Interes Simple
+					if (1>0){
+						
+						System.out.println("Escribe el interes");
+						double interes=scanner.nextDouble();
+						double resultado1;
+						resultado1=capital*interes/100;
+						
+						
+						System.out.println("Escriba la cantidad de meses");
+						int meses=scanner.nextInt();
+						
+						double resultado2;
+						resultado2=resultado1*meses;
+						System.out.println("INTERES SIMPLE :"+resultado2);
+												
+					}}
+				
+				  //Decision numero 2- Monto Simple.
+					else if(dp==2){
+					    System.out.println("*Monto simple*");
+					    System.out.println("Digite su CAPILTAL");
+						double capital_monto=scanner.nextInt();
+						System.out.println("Eliga la opcion del interes");
+						System.out.println("1 Mensual");
+						System.out.println("2 Bimestral");
+						int decision_monto=scanner.nextInt();
+						
+
+						
+						if (1>0){
+							
+							System.out.println("Escribe el interes");
+							double interes_monto=scanner.nextDouble();
+							double resultado_monto;
+							resultado_monto=capital_monto*interes_monto/100;
+							
+							
+							System.out.println("Escriba la cantidad de meses");
+							int meses_monto=scanner.nextInt();
+							
+							double resultado_monto_simple;
+							resultado_monto_simple=resultado_monto*meses_monto;
+							System.out.println("INTERES SIMPLE :"+resultado_monto_simple);
+													
+						}
+					}
